@@ -9,7 +9,8 @@ jobs:
             name: Install Dependencies
             command: |
               lscpu
-              
+              echo Hello,subscribe it
+
 workflows:
     version: 2.1
     build:
